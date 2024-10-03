@@ -8,11 +8,46 @@
     <!-- tailwind and daisy  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.11/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <!-- favicon  -->
+    <script src="https://kit.fontawesome.com/78f2740b36.js" crossorigin="anonymous"></script>
+    <!-- custom tailwind  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'orange': '#FF4240 ',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
+    <main class="max-w-6xl mx-auto">
+        <!-- navigation  -->
+        <div class="flex items-center justify-between my-10">
+            <div>
+                <a class="btn btn-ghost font-extrabold text-4xl">Hockey<span class="text-orange">’</span>s</a>
+            </div>
+            <ul class="flex justify-center gap-10">
+                <li class="text-orange">Home</li>
+                <li>About</li>
+                <li>Pages</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+            <div class="flex items-center gap-8">
+                <i class="fa-solid fa-magnifying-glass" style="color: #a3a5a8;"></i>
+                <button class="btn bg-orange font-bold text-xl text-white">Get Ticket</button>
+            </div>
+        </div>
+    </main>
+    <footer>
 
+    </footer>
 </body>
 
 </html>
